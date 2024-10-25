@@ -1,0 +1,7 @@
+error:
+  params: Invalid parameters
+  bearer: Invalid bearer token
+  reqBearer: Grant type required refresh token as bearer
+  unauthorized: Unauthorized
+
+

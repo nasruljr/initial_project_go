@@ -1,0 +1,17 @@
+## jika menggunakan mysql ##
+uncomment func DatabaseConn() untuk mysql, dan comment func DatabaseConn() untuk postgre (pkg/conn/database.go)
+
+## sesuaikan config database ##
+ganti config database yang anda miliki (configs/config.yml)
+
+## install dulu go versi 1.22.3 ##
+go mod init initial_project_go
+go mod tidy
+go run .\cmd\main.go
+
+## untuk testing ##
+go test -run TestAddUsersEndpoint initial_project_go/internal/user
+go test -run TestGetUsersEndpoint initial_project_go/internal/user
+
+## collection postman sudah disertakan ##
+API Service.postman_collection.json -> import ke postman

@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "6fc35d6a-5971-4575-b02d-3354973476d7",
+		"name": "API Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7151914",
+		"_collection_link": "https://cloudy-star-480427.postman.co/workspace/GRPC~ca193495-36e9-40f4-83ba-319fff3e9cca/collection/7151914-6fc35d6a-5971-4575-b02d-3354973476d7?action=share&source=collection_link&creator=7151914"
+	},
+	"item": [
+		{
+			"name": "Add Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"rama\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8585/v1/add/users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8585",
+					"path": [
+						"v1",
+						"add",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"keyword\": \"test\"\r\n    // \"limit\": 10\r\n    // \"offset\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8585/v1/get/users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8585",
+					"path": [
+						"v1",
+						"get",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

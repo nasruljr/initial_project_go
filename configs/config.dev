@@ -1,0 +1,19 @@
+# READ ME
+# create file config.yml inside configs folder, and copy this into config.yml file
+# add all change in config.yml to this file
+
+appName: API Service
+env: development
+limit: 10
+server:
+  port: 8585
+  rateLimit: 100
+database:
+  host: 127.0.0.1
+  name: postgres
+  user: postgres
+  pass: postgres123
+  port: 5432
+api:
+  test:
+    testApi1: https://ipinfo.io/161.185.160.93/geo
